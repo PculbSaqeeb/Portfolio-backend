@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_problem_problems",
+  "info": {
+    "displayName": "problem"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "problemDetail": {
+      "type": "text",
+      "required": true
+    }
+  },
+  "config": {}
+}

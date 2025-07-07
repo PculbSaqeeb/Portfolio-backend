@@ -1,0 +1,99 @@
+{
+  "kind": "collectionType",
+  "collectionName": "portfolios",
+  "info": {
+    "singularName": "portfolio",
+    "pluralName": "portfolios",
+    "displayName": "Portfolio"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "required": true
+    },
+    "avatar": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "skills": {
+      "type": "component",
+      "component": "skill.skills",
+      "repeatable": true,
+      "required": true
+    },
+    "skillBreakdown": {
+      "type": "component",
+      "component": "skill-breakdown.skill-breakdown",
+      "repeatable": true,
+      "required": true
+    },
+    "projects": {
+      "type": "component",
+      "component": "project.projects",
+      "repeatable": true,
+      "required": true
+    },
+    "recommendations": {
+      "type": "component",
+      "component": "recommendation.recommendations",
+      "repeatable": true
+    },
+    "education": {
+      "type": "component",
+      "component": "education.education",
+      "repeatable": true,
+      "required": true
+    },
+    "socialLinks": {
+      "type": "component",
+      "component": "social-links.social-links",
+      "repeatable": true
+    },
+    "shortBio": {
+      "type": "text",
+      "required": true
+    },
+    "stats": {
+      "type": "component",
+      "component": "stats.stats",
+      "repeatable": true,
+      "required": true
+    },
+    "resumeLink": {
+      "type": "string",
+      "required": true
+    },
+    "longBio": {
+      "type": "blocks",
+      "required": true
+    },
+    "contactEmail": {
+      "type": "string",
+      "default": "Globalsales.kmit@gmail.com",
+      "required": true
+    },
+    "message": {
+      "type": "text",
+      "required": true
+    },
+    "profile": {
+      "type": "component",
+      "component": "proflie.profile",
+      "repeatable": true,
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_proflie_profiles",
+  "info": {
+    "displayName": "profile"
+  },
+  "options": {},
+  "attributes": {
+    "profile": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_stats_stats",
+  "info": {
+    "displayName": "stats"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "experience": {
+      "type": "integer",
+      "required": true
+    }
+  },
+  "config": {}
+}

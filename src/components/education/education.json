@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_education_educations",
+  "info": {
+    "displayName": "education"
+  },
+  "options": {},
+  "attributes": {
+    "degree": {
+      "type": "string",
+      "required": true
+    },
+    "university": {
+      "type": "text",
+      "required": true
+    },
+    "startDate": {
+      "type": "date",
+      "required": false
+    },
+    "endDate": {
+      "type": "date"
+    },
+    "location": {
+      "type": "component",
+      "component": "location.location",
+      "repeatable": false,
+      "required": true
+    },
+    "cgpa": {
+      "type": "decimal",
+      "required": true
+    }
+  },
+  "config": {}
+}

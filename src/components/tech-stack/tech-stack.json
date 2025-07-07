@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_tech_stack_tech_stacks",
+  "info": {
+    "displayName": "techStack"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "config": {}
+}

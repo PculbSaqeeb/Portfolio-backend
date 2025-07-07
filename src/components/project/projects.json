@@ -1,0 +1,61 @@
+{
+  "collectionName": "components_project_projects",
+  "info": {
+    "displayName": "projects"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "name": {
+      "type": "text",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "techStack": {
+      "type": "component",
+      "component": "tech-stack.tech-stack",
+      "repeatable": true,
+      "required": true
+    },
+    "feature": {
+      "type": "component",
+      "component": "details.details",
+      "repeatable": true,
+      "required": true
+    },
+    "slug": {
+      "type": "string",
+      "required": true
+    },
+    "problem": {
+      "type": "component",
+      "component": "problem.problem",
+      "repeatable": true
+    },
+    "solution": {
+      "type": "component",
+      "component": "solution.solution",
+      "repeatable": true
+    },
+    "link": {
+      "type": "component",
+      "component": "link.links",
+      "repeatable": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    }
+  },
+  "config": {}
+}

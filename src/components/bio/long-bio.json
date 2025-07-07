@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_bio_long_bios",
+  "info": {
+    "displayName": "longBio"
+  },
+  "options": {},
+  "attributes": {
+    "logo": {
+      "type": "blocks"
+    }
+  },
+  "config": {}
+}

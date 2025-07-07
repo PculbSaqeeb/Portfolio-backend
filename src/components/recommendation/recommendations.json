@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_recommendation_recommendations",
+  "info": {
+    "displayName": "recommendations"
+  },
+  "options": {},
+  "attributes": {
+    "caption": {
+      "type": "text",
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "profile": {
+      "type": "text",
+      "required": true
+    },
+    "rating": {
+      "type": "decimal",
+      "required": true,
+      "min": 1,
+      "max": 5
+    }
+  },
+  "config": {}
+}

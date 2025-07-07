@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_solution_solutions",
+  "info": {
+    "displayName": "solution"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "solutionDetail": {
+      "type": "text",
+      "required": true
+    },
+    "impact": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "config": {}
+}

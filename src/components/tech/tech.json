@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_tech_teches",
+  "info": {
+    "displayName": "tech"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "proficiency": {
+      "type": "integer",
+      "required": true,
+      "min": 0,
+      "max": 100
+    }
+  },
+  "config": {}
+}
