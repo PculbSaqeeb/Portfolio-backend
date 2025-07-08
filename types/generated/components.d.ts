@@ -71,8 +71,7 @@ export interface LinkLinks extends Struct.ComponentSchema {
   };
   attributes: {
     link: Schema.Attribute.String & Schema.Attribute.Required;
-    logo: Schema.Attribute.Media<'images' | 'files'> &
-      Schema.Attribute.Required;
+    logo: Schema.Attribute.Media<'images' | 'files'>;
     slogun: Schema.Attribute.String & Schema.Attribute.Required;
     title: Schema.Attribute.String & Schema.Attribute.Required;
   };
