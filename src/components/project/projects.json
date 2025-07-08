@@ -48,9 +48,18 @@
       "component": "link.links",
       "repeatable": true
     },
-    "image": {
+    "mutipleProjectImage": {
       "type": "media",
       "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "projectImage": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
       "allowedTypes": [
         "images",
         "files"
