@@ -58,12 +58,15 @@
     },
     "projectImage": {
       "type": "media",
-      "multiple": true,
+      "multiple": false,
       "required": true,
       "allowedTypes": [
         "images",
         "files"
       ]
+    },
+    "tag": {
+      "type": "string"
     }
   },
   "config": {}

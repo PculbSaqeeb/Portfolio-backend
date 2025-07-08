@@ -123,10 +123,11 @@ export interface ProjectProjects extends Struct.ComponentSchema {
     mutipleProjectImage: Schema.Attribute.Media<'images' | 'files', true>;
     name: Schema.Attribute.Text & Schema.Attribute.Required;
     problem: Schema.Attribute.Component<'problem.problem', true>;
-    projectImage: Schema.Attribute.Media<'images' | 'files', true> &
+    projectImage: Schema.Attribute.Media<'images' | 'files'> &
       Schema.Attribute.Required;
     slug: Schema.Attribute.String & Schema.Attribute.Required;
     solution: Schema.Attribute.Component<'solution.solution', true>;
+    tag: Schema.Attribute.String;
     techStack: Schema.Attribute.Component<'tech-stack.tech-stack', true> &
       Schema.Attribute.Required;
     title: Schema.Attribute.String & Schema.Attribute.Required;
