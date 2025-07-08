@@ -10,3 +10,17 @@ module.exports = ({ env }) => ({
     },
   },
 });
+
+
+module.exports = ({ env }) => (
+  {
+    'cloudinary-media-library': {
+      enabled: true,  
+      config: {
+        cloudName: 'your-cloud-name',
+        apiKey: 'your-api-key',
+        encryptionKey: '32 chars encryption key'
+      },
+    },
+  }
+)
