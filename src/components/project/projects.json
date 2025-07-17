@@ -53,7 +53,8 @@
       "multiple": true,
       "allowedTypes": [
         "images",
-        "files"
+        "files",
+        "videos"
       ]
     },
     "projectImage": {

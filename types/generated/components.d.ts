@@ -120,7 +120,10 @@ export interface ProjectProjects extends Struct.ComponentSchema {
     feature: Schema.Attribute.Component<'details.details', true> &
       Schema.Attribute.Required;
     link: Schema.Attribute.Component<'link.links', true>;
-    mutipleProjectImage: Schema.Attribute.Media<'images' | 'files', true>;
+    mutipleProjectImage: Schema.Attribute.Media<
+      'images' | 'files' | 'videos',
+      true
+    >;
     name: Schema.Attribute.Text & Schema.Attribute.Required;
     problem: Schema.Attribute.Component<'problem.problem', true>;
     projectImage: Schema.Attribute.Media<'images' | 'files'> &
