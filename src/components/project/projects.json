@@ -52,9 +52,9 @@
       "type": "media",
       "multiple": true,
       "allowedTypes": [
-        "images",
         "files",
-        "videos"
+        "videos",
+        "images"
       ]
     },
     "projectImage": {
@@ -68,6 +68,15 @@
     },
     "tag": {
       "type": "string"
+    },
+    "mockupsVideo": {
+      "type": "component",
+      "component": "web.web-project-video",
+      "repeatable": true
+    },
+    "liveLink": {
+      "type": "string",
+      "required": false
     }
   },
   "config": {}

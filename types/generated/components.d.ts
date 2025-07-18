@@ -120,8 +120,10 @@ export interface ProjectProjects extends Struct.ComponentSchema {
     feature: Schema.Attribute.Component<'details.details', true> &
       Schema.Attribute.Required;
     link: Schema.Attribute.Component<'link.links', true>;
+    liveLink: Schema.Attribute.String;
+    mockupsVideo: Schema.Attribute.Component<'web.web-project-video', true>;
     mutipleProjectImage: Schema.Attribute.Media<
-      'images' | 'files' | 'videos',
+      'files' | 'videos' | 'images',
       true
     >;
     name: Schema.Attribute.Text & Schema.Attribute.Required;
@@ -254,6 +256,35 @@ export interface TechTech extends Struct.ComponentSchema {
   };
 }
 
+export interface WebWebProjectVideo extends Struct.ComponentSchema {
+  collectionName: 'components_web_web_project_videos';
+  info: {
+    displayName: 'webProjectVideo';
+  };
+  attributes: {
+    iosMockupVideo: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
+    isIos: Schema.Attribute.Boolean;
+    isLaptop: Schema.Attribute.Boolean;
+    isMobile: Schema.Attribute.Boolean;
+    isTablet: Schema.Attribute.Boolean;
+    laptopMockupVideo: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
+    mobileMockupVideo: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
+    tabletMockupVideo: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
+  };
+}
+
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
@@ -277,6 +308,7 @@ declare module '@strapi/strapi' {
       'stats.stats': StatsStats;
       'tech-stack.tech-stack': TechStackTechStack;
       'tech.tech': TechTech;
+      'web.web-project-video': WebWebProjectVideo;
     }
   }
 }

@@ -1,0 +1,62 @@
+{
+  "collectionName": "components_web_web_project_videos",
+  "info": {
+    "displayName": "webProjectVideo"
+  },
+  "options": {},
+  "attributes": {
+    "isTablet": {
+      "type": "boolean"
+    },
+    "tabletMockupVideo": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "isMobile": {
+      "type": "boolean"
+    },
+    "mobileMockupVideo": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "isLaptop": {
+      "type": "boolean"
+    },
+    "laptopMockupVideo": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "isIos": {
+      "type": "boolean"
+    },
+    "iosMockupVideo": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}
