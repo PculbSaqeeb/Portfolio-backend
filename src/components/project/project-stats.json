@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_project_project_stats",
+  "info": {
+    "displayName": "projectStats"
+  },
+  "options": {},
+  "attributes": {
+    "experience": {
+      "type": "integer"
+    },
+    "label": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

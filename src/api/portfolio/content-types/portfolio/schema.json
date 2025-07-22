@@ -94,6 +94,21 @@
       "component": "proflie.profile",
       "repeatable": true,
       "required": true
+    },
+    "video": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "projectStats": {
+      "type": "component",
+      "component": "project.project-stats",
+      "repeatable": true
     }
   }
 }

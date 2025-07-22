@@ -110,6 +110,17 @@ export interface ProflieProfile extends Struct.ComponentSchema {
   };
 }
 
+export interface ProjectProjectStats extends Struct.ComponentSchema {
+  collectionName: 'components_project_project_stats';
+  info: {
+    displayName: 'projectStats';
+  };
+  attributes: {
+    experience: Schema.Attribute.Integer;
+    label: Schema.Attribute.String;
+  };
+}
+
 export interface ProjectProjects extends Struct.ComponentSchema {
   collectionName: 'components_project_projects';
   info: {
@@ -122,10 +133,6 @@ export interface ProjectProjects extends Struct.ComponentSchema {
     link: Schema.Attribute.Component<'link.links', true>;
     liveLink: Schema.Attribute.String;
     mockupsVideo: Schema.Attribute.Component<'web.web-project-video', true>;
-    mutipleProjectImage: Schema.Attribute.Media<
-      'files' | 'videos' | 'images',
-      true
-    >;
     name: Schema.Attribute.Text & Schema.Attribute.Required;
     problem: Schema.Attribute.Component<'problem.problem', true>;
     projectImage: Schema.Attribute.Media<'images' | 'files'> &
@@ -298,6 +305,7 @@ declare module '@strapi/strapi' {
       'location.location': LocationLocation;
       'problem.problem': ProblemProblem;
       'proflie.profile': ProflieProfile;
+      'project.project-stats': ProjectProjectStats;
       'project.projects': ProjectProjects;
       'recommendation.recommendations': RecommendationRecommendations;
       'skill-breakdown.skill-breakdown': SkillBreakdownSkillBreakdown;

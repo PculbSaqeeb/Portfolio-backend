@@ -48,15 +48,6 @@
       "component": "link.links",
       "repeatable": true
     },
-    "mutipleProjectImage": {
-      "type": "media",
-      "multiple": true,
-      "allowedTypes": [
-        "files",
-        "videos",
-        "images"
-      ]
-    },
     "projectImage": {
       "type": "media",
       "multiple": false,

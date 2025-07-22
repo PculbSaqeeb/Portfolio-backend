@@ -476,6 +476,7 @@ export interface ApiPortfolioPortfolio extends Struct.CollectionTypeSchema {
       Schema.Attribute.Required;
     projects: Schema.Attribute.Component<'project.projects', true> &
       Schema.Attribute.Required;
+    projectStats: Schema.Attribute.Component<'project.project-stats', true>;
     publishedAt: Schema.Attribute.DateTime;
     recommendations: Schema.Attribute.Component<
       'recommendation.recommendations',
@@ -497,6 +498,10 @@ export interface ApiPortfolioPortfolio extends Struct.CollectionTypeSchema {
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    video: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
   };
 }
 
