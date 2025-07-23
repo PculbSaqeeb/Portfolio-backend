@@ -233,6 +233,16 @@ export interface StatsStats extends Struct.ComponentSchema {
   };
 }
 
+export interface TagsTags extends Struct.ComponentSchema {
+  collectionName: 'components_tags_tags';
+  info: {
+    displayName: 'tags';
+  };
+  attributes: {
+    tag: Schema.Attribute.String;
+  };
+}
+
 export interface TechStackTechStack extends Struct.ComponentSchema {
   collectionName: 'components_tech_stack_tech_stacks';
   info: {
@@ -314,6 +324,7 @@ declare module '@strapi/strapi' {
       'social-links.social-links': SocialLinksSocialLinks;
       'solution.solution': SolutionSolution;
       'stats.stats': StatsStats;
+      'tags.tags': TagsTags;
       'tech-stack.tech-stack': TechStackTechStack;
       'tech.tech': TechTech;
       'web.web-project-video': WebWebProjectVideo;

@@ -455,6 +455,7 @@ export interface ApiPortfolioPortfolio extends Struct.CollectionTypeSchema {
   attributes: {
     avatar: Schema.Attribute.Media<'images' | 'files'> &
       Schema.Attribute.Required;
+    categories: Schema.Attribute.Component<'tags.tags', true>;
     contactEmail: Schema.Attribute.String &
       Schema.Attribute.Required &
       Schema.Attribute.DefaultTo<'Globalsales.kmit@gmail.com'>;
@@ -498,10 +499,6 @@ export interface ApiPortfolioPortfolio extends Struct.CollectionTypeSchema {
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    video: Schema.Attribute.Media<
-      'images' | 'files' | 'videos' | 'audios',
-      true
-    >;
   };
 }
 
