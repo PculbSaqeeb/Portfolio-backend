@@ -455,7 +455,13 @@ export interface ApiPortfolioPortfolio extends Struct.CollectionTypeSchema {
   attributes: {
     avatar: Schema.Attribute.Media<'images' | 'files'> &
       Schema.Attribute.Required;
-    categories: Schema.Attribute.Component<'tags.tags', true>;
+    categories: Schema.Attribute.Component<'tags.tags', true> &
+      Schema.Attribute.SetMinMax<
+        {
+          max: 3;
+        },
+        number
+      >;
     contactEmail: Schema.Attribute.String &
       Schema.Attribute.Required &
       Schema.Attribute.DefaultTo<'Globalsales.kmit@gmail.com'>;

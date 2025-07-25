@@ -103,7 +103,8 @@
     "categories": {
       "type": "component",
       "component": "tags.tags",
-      "repeatable": true
+      "repeatable": true,
+      "max": 3
     }
   }
 }
